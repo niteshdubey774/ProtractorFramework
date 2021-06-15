@@ -26,26 +26,26 @@ describe('Demo calculator tests', function () {
 
     });
 
-    it('subtraction test', function () {
+//     it('subtraction test', function () {
 
-        homepage.get('http://juliemr.github.io/protractor-demo/');
+//         homepage.get('http://juliemr.github.io/protractor-demo/');
 
-        homepage.enterFirstNumber('4');
+//         homepage.enterFirstNumber('4');
 
-        homepage.enterSecondNumber('3');
-        browser.sleep(5000);
-        element(by.model('operator')).element(by.css("option[value='SUBTRACTION']")).click();
-        //element(by.css('select[ng-model="operator"]')).click();
-        browser.sleep(2000)
-        //element(by.css("#operator[value='DIVISION']")).click();
-// failing this to see failed status in allure report.
-        homepage.clickGo();
+//         homepage.enterSecondNumber('3');
+//         browser.sleep(5000);
+//         element(by.model('operator')).element(by.css("option[value='SUBTRACTION']")).click();
+//         //element(by.css('select[ng-model="operator"]')).click();
+//         browser.sleep(2000)
+//         //element(by.css("#operator[value='DIVISION']")).click();
+// // failing this to see failed status in allure report.
+//         homepage.clickGo();
 
-        homepage.verifyResult('1');
+//         homepage.verifyResult('1');
 
-        browser.sleep(2000);
+//         browser.sleep(2000);
 
-    });
+//     });
 
 
 });
